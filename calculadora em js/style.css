@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family= Raleway :wght@800 & display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 70vh;
+    background: repeating-linear-gradient(380deg, yellow, rgb(145, 228, 12)); 
+    margin-bottom: 16.5%;
+}
+
+div{
+    border: 2px solid black;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    height: 300px;
+    
+}
+
+input{
+    margin: 0.50rem;
+    background-color: rgb(248, 7, 7);
+    color: aliceblue;
+    padding: 0.532rem;
+    font-size: 20px;
+}
+input[type=radio]{
+    width: 20px;
+    cursor: pointer;
+    color: white;
+  background: blue;
+  transition: transform 0.5s;
+  transform: translateX(0) scale(0.5);
+}
+input[type=radio]:hover,
+input[type=radio]:focus {
+        background: red;
+        transform: translateX(10px) scale(1.2);
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 10px;
+    font-size: 40px;
+    text-shadow: 2px 2px red;
+    transition: 0.4s;
+}
+h2:hover{
+
+text-shadow: 4px 7px red;
+opacity: 2;
+}
+
+button{
+    width: 70%;
+    padding: 0.50rem;
+    cursor: pointer;
+    font-size: 25px;
+    
+}
+.butao{
+    cursor: pointer;
+}
+
+@keyframes float {
+    from {
+        transform: translateX(25px);
+      }
+      to {
+        transform: translateX(15px);
+      }
+   
+  }
+    h1 {
+        animation: float 1s infinite alternate;
+    }
+
